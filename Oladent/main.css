@@ -1,0 +1,236 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  /* Estilos del encabezado */
+  header {
+    background-color: #0058a8;
+    padding: 2px;
+    text-align: center;
+    position:sticky;
+    top: 0;
+    width: 100%;
+  }
+  
+  header h1 {
+    color: #ffffff;
+    margin: 0;
+
+    /* Estilos para el menú*/
+  }
+  nav ul li {
+    display: inline-flex;
+    border-radius: 8px;
+  }
+  .menu{
+    width: 140px;
+    height: 30px;
+    margin: 5px;
+    padding: 2px;
+    justify-content: space-around;
+    text-decoration-line: none;
+  }
+  a {
+    transition: background-color .5s;
+     align-self: center;
+  }
+    a:hover {
+    width: 150px;
+    background-color: #8bdeff;
+    color: #1c0097;
+    transition: background-color .5s;
+    border-radius: 8px;
+    text-decoration: none;
+    align-self: center;
+  }
+
+  /* Estilos del contenido principal */
+  main {
+    padding: 20px;
+    margin-top: 10%;
+  }
+  
+  section {
+    margin-bottom: 30px;
+  }
+  
+  /* Estilos del pie de página */
+  footer {
+    background-color: #333333;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+  }  
+  /* Estilos específicos */
+  #inicio {
+    background-color: #f0f0f0;
+  }
+  .imglogo{
+    width: 100%;
+  }
+  
+  #servicios ul {
+    list-style-type: disc;
+    margin-left: 20px;
+  }
+  
+  #doctores ul {
+    list-style-type: square;
+    margin-left: 20px;
+  }
+  .carousel-item img {
+    width: 100%;
+    object-fit: contain;
+  }
+
+
+  /* Estilos para el logo del consultorio */
+  link[rel="icon"] {
+    width: 50px;
+    height: 50px;
+  }
+  
+  /* Configuración de propiedades para parrafos */
+  p{
+    text-align: justify;
+  }
+  .htext{
+    color: #ffffff;
+  }
+  /* Estilos de redes sociales */
+  .redes_sociales{
+    width: 25px;
+    height: 25px;
+  }
+  .icono_body{
+    width: 15px;
+    height: 15px;
+  }
+  .icono_titulos{
+    width: 27px;
+    height: 27px;
+    display: flex;
+    flex-wrap: wrap;
+    align-self: center;
+  }
+    .color_titulos_body{
+    color: #0058a8;
+    display: flex;
+  }
+  /* Estilos de contacto*/
+  .contacto{
+    background-color:rgb(218, 238, 255);
+    border-radius: 8px;
+  }
+  /*Estilos para el Maps de la dirección del consultorio*/
+  iframe{
+    border-radius: 8px 8px 8px 8px;
+    height: 100%;
+  }
+  .frame-modal{
+    border-radius: 8px 8px 8px 8px;
+    height: 500px;
+    width: 100%;
+  }
+  /*Estilos para perfil de usuarios*/
+  h5{
+    color: #f0f0f0;
+  }
+  #perfil {
+    margin-top: 16px;
+  }
+
+  #perfil > div {
+    display: flex;
+  }
+
+  #perfil > div > div {
+    margin-left: 16px;
+  }
+ /*Estilos para botón de cerrar sesión*/
+  #logout {
+    display: none;
+    margin-top: 16px;
+    flex-direction: row-reverse;
+  }
+  #areaMensaje{
+    width: 30%;
+  }
+  #BtnSesion{
+    flex: baseline;
+  }
+
+  /*Estilos para dispositivos iPad */
+  @media only screen and (min-width: 768px) and (max-width: 995px) {
+    header {background-color: rgb(25, 37, 88);
+      padding: 1px;
+      text-align: center;
+      font-size: 16px;
+      color: #ffffff;
+      position:sticky;
+      top: 0;
+      width: 100%;}
+    nav ul {
+      background-color: rgb(25, 37, 88);
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      }
+          
+    nav ul li {
+      display: inline;
+      margin-right: 1px;
+    }
+    footer{
+      width: 100%;
+    }
+    .htext{
+      font-size: 24px;
+    }
+    main {
+      padding: 20px;
+      margin-top: 20%;
+    }
+  }
+  
+  /*Estilos para dispositivos iPhone */
+  @media only screen and (max-width: 767px) { 
+    header {background-color: rgb(0, 11, 162);
+      padding: 1px;
+      text-align: center;
+      font-size: 16px;
+      position:sticky;
+      top: 0;
+      width: 100%;
+    }
+    nav ul {
+      background-color: rgb(0, 11, 162);
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      }
+    nav ul li {
+      display: inline;
+      margin-right: 1px;
+      }
+    footer{
+        width: 100%;
+      }
+      main {
+        padding: 20px;
+        margin-top: 30%;
+      }
+      .htext{
+        font-size: 20px;
+      }
+  }
+
+  /* Estilos para dispositivos PC */
+  @media only screen and (min-width: 901px) {
+    
+  }
+ 
+  
