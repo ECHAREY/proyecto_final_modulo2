@@ -60,6 +60,7 @@ function CargaPerfil(perfil) {
     imagen.alt = sesion.getAltTextImage();
     imagen.style.width = '50px';
     imagen.style.height = '50px';
+    imagen.style.lineHeight = "2px";
     container.appendChild(imagen);
 
 
@@ -70,10 +71,12 @@ function CargaPerfil(perfil) {
     const nombre = document.createElement("p");
     nombre.textContent = sesion.nombre;
     nombre.style.color = 'white';
+    nombre.style.lineHeight = "2px";
     containerDataPersonal.appendChild(nombre);
     const apellido = document.createElement("p");
     apellido.textContent = sesion.apellido;
     apellido.style.color = 'white';
+    apellido.style.lineHeight = "2px";
     containerDataPersonal.appendChild(apellido);
     //const fecha = document.createElement("p");
     //fecha.textContent = sesion.fecnac;
